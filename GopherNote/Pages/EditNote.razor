@@ -1,6 +1,5 @@
 ﻿@inject SpeechService SpeechService
 @inject IJSRuntime JS
-@inject NoteService NoteService
 @implements IDisposable
 
 <div class="editor-container">
@@ -16,7 +15,7 @@
         <div class="toolbar-main-row">
             <div class="template-picker-group">
                 <button type="button" class="main-button template-button" @onclick="ToggleTemplateMenu">
-                    🎨 Шаблоны: <strong>@GetTemplateName()</strong>
+                    🎨 Шаблоны:&nbsp;<strong>@GetTemplateName()</strong>
                 </button>
 
                 @if (showTemplateMenu)

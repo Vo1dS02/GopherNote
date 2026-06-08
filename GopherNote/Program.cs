@@ -10,9 +10,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-//Регистрируем сервисы
+// Регистрируем сервисы
 builder.Services.AddScoped<NoteService>();
 builder.Services.AddScoped<QuoteService>(); // сервиc для контекстных цитат
-builder.Services.AddScoped<SpeechService>(); //connect SpeechService
+builder.Services.AddScoped<SpeechService>(); // сервис для распознавания речи
 
 await builder.Build().RunAsync();
