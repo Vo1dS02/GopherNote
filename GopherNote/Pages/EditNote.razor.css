@@ -502,13 +502,13 @@
 .pin-icon {
     width: 24px;
     font-size: 1.15rem;
-    color: var(--pin-color);
+    color: #ffffff !important;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
 .pin-icon:hover {
-    color: var(--pin-hover);
+    color: #ffffff !important;
     transform: scale(1.1);
 }
 
